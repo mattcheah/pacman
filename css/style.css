@@ -1,0 +1,21 @@
+/*pacman styles edited 2/3/17 12:40pm */
+
+/* Section 1: Header Styles */
+
+#top-head {
+    width:100%;
+    background-color:#CCC;
+    box-shadow:0 0 5px 5px #AAA;
+    padding:10px;
+}
+
+/* Section 2: Body Styles */
+
+#body-container {
+    width:80%;
+    margin: 0 auto 20px;
+    box-shadow:0 0 5px 5px #AAA;
+}
+
+/* Section 3: Footer Styles */
+
