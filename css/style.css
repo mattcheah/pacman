@@ -1,21 +1,46 @@
 /*pacman styles edited 2/3/17 12:40pm */
 
-/* Section 1: Header Styles */
+/* Section 1: Site-wide Styles */
+
+
+/* Section 2: Header Styles */
 
 #top-head {
     width:100%;
     background-color:#CCC;
     box-shadow:0 0 5px 5px #AAA;
     padding:10px;
+    z-index:10;
+    position:relative;
 }
 
-/* Section 2: Body Styles */
+#logo-container {
+    float:left;
+}
+
+#header-right-container {
+    float:right;
+}
+
+/* Section 3: Body Styles */
 
 #body-container {
     width:80%;
     margin: 0 auto 20px;
     box-shadow:0 0 5px 5px #AAA;
+    padding:20px;
+    position:relative;
 }
 
-/* Section 3: Footer Styles */
+/* Section 4: Footer Styles */
 
+footer {
+    background-color:#ccc;
+    padding:20px;
+}
+
+/* Section 5: Homepage Styles */
+
+#home-jumbotron {
+    padding:20px 10%;
+}
