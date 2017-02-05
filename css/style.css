@@ -22,25 +22,76 @@
     float:right;
 }
 
+.navbar.navbar-default {
+    margin-bottom:0px;
+}
+
+nav {
+
+    background: #365c8e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #365c8e 0%, #19689e 49%, #175993 51%, #1a6ea5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #365c8e 0%,#19689e 49%,#175993 51%,#1a6ea5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #365c8e 0%,#19689e 49%,#175993 51%,#1a6ea5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#365c8e', endColorstr='#1a6ea5',GradientType=0 ); /* IE6-9 */
+
+    color:white;
+}
+
+nav div a{
+    color:white;
+}
+
+nav .navbar-header a:hover {
+    color:#a0c4e4 ;
+}
+
+
 /* Section 3: Body Styles */
+#full-body {
+    background: #365c8e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #365c8e 0%, #19689e 28%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #365c8e 0%,#19689e 28%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #365c8e 0%,#19689e 28%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#365c8e', endColorstr='#19689e',GradientType=0 ); /* IE6-9 */
+    padding:20px 10%;
+}
 
 #body-container {
-    width:80%;
+    width:100%;
     margin: 0 auto 20px;
-    box-shadow:0 0 5px 5px #AAA;
+    box-shadow:1px 1px 6px 0px #222;
     padding:20px;
     position:relative;
+    background-color:#f5f5f0;
+    
+
 }
 
 /* Section 4: Footer Styles */
 
 footer {
-    background-color:#ccc;
-    padding:20px;
+    background-color:#9dbeda;
+    padding:20px 10%;
 }
 
 /* Section 5: Homepage Styles */
 
 #home-jumbotron {
+    
+    background-image: url('/pacman/images/huntington-med.jpeg');
+    background-size: cover;
+    color:white;
+    height:400px;
+    padding:0px;
+    margin:30px 0 0 0;
+}
+
+#home-jumbotron h1 {
+    font-weight:700;
+}
+
+#jumbotron-overlay {
+    background: rgba(0,0,0,.6);
     padding:20px 10%;
+    height:100%;
 }
