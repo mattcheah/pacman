@@ -172,23 +172,23 @@ footer {
 #ribbon-container {
     text-align: center;
     padding: 0 10%;
-    margin-top: -86px;
-}
-
-#ribbon {
+    height: 122px;
     width: 100%;
-    position: absolute;
-    left: 0;
     z-index: 10;
-    top: 185px;
-    height: 75%;
+    background-image: url(../images/ribboncrop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -122px;
+    position: relative;
+    bottom:50px;
 }
 
 #ribbon-container h2 {
-    z-index:20;
     position:relative;
     color:white;
     font-weight:700;
     font-size:40px;
-    top:10px;
+    top: 18px;
+    margin: 0 auto;
 }
