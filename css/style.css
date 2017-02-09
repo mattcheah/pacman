@@ -79,7 +79,7 @@ nav li a:hover {
 }
 
 .body-container {
-    margin: 0 auto 20px;
+    margin: 25px auto 20px;
     box-shadow:1px 1px 6px 0px #222;
     padding:20px;
     position:relative;
@@ -128,6 +128,8 @@ footer {
 		4px 4px, /*thin stripes*/
 		cover; /*base white*/
     padding:20px 10%;
+    
+    color:white;
 }
 
 /* Section 5: Homepage Styles */
@@ -137,7 +139,7 @@ footer {
     background-image: url('/pacman/images/huntington-med.jpeg');
     background-size: cover;
     color:white;
-    height:400px;
+    height:100%;
     padding:0px;
     margin:90px 0 0 0;
 }
@@ -148,15 +150,16 @@ footer {
 }
 
 #jumbotron-overlay {
-    background: rgba(0,0,0,.6);
+    background: rgba(40,0,0,.6);
     padding:20px 10%;
     height:100%;
 }
 
 #home-signup-container {
-    margin-top:40px;
+    margin:40px 0 60px;
     text-align:center;
 }
+
 #home-signup-container input, #home-signup-container button {
     display:inline-block;
     width:200px; 
@@ -166,9 +169,26 @@ footer {
     bottom: 1px;
 }
 
-
-
 #ribbon-container {
-    text-align:center;
-    padding:0 10%;
+    text-align: center;
+    padding: 0 10%;
+    margin-top: -86px;
+}
+
+#ribbon {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 185px;
+    height: 75%;
+}
+
+#ribbon-container h2 {
+    z-index:20;
+    position:relative;
+    color:white;
+    font-weight:700;
+    font-size:40px;
+    top:10px;
 }
