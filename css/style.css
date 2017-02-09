@@ -2,6 +2,9 @@
 
 /* Section 1: Site-wide Styles */
 
+.centered {
+    text-align:center;
+}
 
 /* Section 2: Header Styles */
 
@@ -18,13 +21,14 @@
     float:left;
 }
 
+#header-logo {
+    height:60px;
+}
+
 #header-right-container {
     float:right;
 }
 
-.navbar.navbar-default {
-    margin-bottom:0px;
-}
 
 nav {
 
@@ -33,8 +37,9 @@ nav {
     background: -webkit-linear-gradient(top,  #365c8e 0%,#19689e 49%,#175993 51%,#1a6ea5 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #365c8e 0%,#19689e 49%,#175993 51%,#1a6ea5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#365c8e', endColorstr='#1a6ea5',GradientType=0 ); /* IE6-9 */
-
     color:white;
+    
+    height:90px;
 }
 
 nav div a{
@@ -45,6 +50,23 @@ nav .navbar-header a:hover {
     color:#a0c4e4 ;
 }
 
+nav li {
+    box-shadow: -7px 0px 7px -8px #333;
+}
+
+nav li:last-child {
+    box-shadow: -7px 0px 7px -8px #333, 7px 0px 7px -8px #333;
+}
+nav li a {
+    padding: 35px 50px !important;
+    font-size: 20px;
+
+}
+
+nav li a:hover {
+    color:#71ade2 !important;
+    background-color: rgba(0,0,0,0)  !important;
+}
 
 /* Section 3: Body Styles */
 #full-body {
@@ -56,21 +78,55 @@ nav .navbar-header a:hover {
     padding:20px 10%;
 }
 
-#body-container {
-    width:100%;
+.body-container {
     margin: 0 auto 20px;
     box-shadow:1px 1px 6px 0px #222;
     padding:20px;
     position:relative;
     background-color:#f5f5f0;
-    
-
 }
 
+.body-container.full {
+    width:100%;
+}
+
+.body-container.half {
+    width:47%;
+    float:left;
+}
+
+.body-container.half.start {
+    margin-right:6%;
+}
 /* Section 4: Footer Styles */
 
 footer {
-    background-color:#9dbeda;
+    background-image: 
+		/*2 grey borders*/
+		linear-gradient(
+			transparent 8%, 
+			rgba(100, 100, 100, 1) 8%, 
+			rgba(100, 100, 100, 1) 14%, 
+			transparent 14%, 
+			transparent 86%, 
+			rgba(100, 100, 100, 17) 86%, 
+			rgba(100, 100, 100, 1) 92%, 
+			transparent 92%
+		), 
+		/*thin stripes*/
+		linear-gradient(
+			45deg, 
+			transparent 45%, 
+			rgba(0, 0, 0, 0.2) 45%, 
+			rgba(0, 0, 0, 0.2) 55%, 
+			transparent 55%
+		), 
+		/*white base*/
+		linear-gradient(#555,#555);
+    background-size: 
+		cover, /*borders*/
+		4px 4px, /*thin stripes*/
+		cover; /*base white*/
     padding:20px 10%;
 }
 
@@ -83,15 +139,36 @@ footer {
     color:white;
     height:400px;
     padding:0px;
-    margin:30px 0 0 0;
+    margin:90px 0 0 0;
 }
 
-#home-jumbotron h1 {
+#home-jumbotron #home-h1 {
     font-weight:700;
+    font-size:54px;
 }
 
 #jumbotron-overlay {
     background: rgba(0,0,0,.6);
     padding:20px 10%;
     height:100%;
+}
+
+#home-signup-container {
+    margin-top:40px;
+    text-align:center;
+}
+#home-signup-container input, #home-signup-container button {
+    display:inline-block;
+    width:200px; 
+    margin:10px 20px;
+    position: relative;
+    height: 35px;
+    bottom: 1px;
+}
+
+
+
+#ribbon-container {
+    text-align:center;
+    padding:0 10%;
 }
