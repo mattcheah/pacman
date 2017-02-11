@@ -2,9 +2,20 @@
 
 /* Section 1: Site-wide Styles */
 
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
 .centered {
     text-align:center;
 }
+
+    
 
 /* Section 2: Header Styles */
 
@@ -136,9 +147,9 @@ footer {
 
 #home-jumbotron {
     
-    background-image: url('/pacman/images/huntington-med.jpeg');
+    background-image: url('/pacman/images/nb.jpg');
     background-size: cover;
-    color:white;
+    color:#FF0000;
     height:100%;
     padding:0px;
     margin:90px 0 0 0;
@@ -147,12 +158,30 @@ footer {
 #home-jumbotron #home-h1 {
     font-weight:700;
     font-size:54px;
+    color:#DD0000
+}
+
+#home-jumbotron #home-h2 {
+    color:#2468b8;
 }
 
 #jumbotron-overlay {
-    background: rgba(40,0,0,.6);
+    box-shadow:inset 0px -5px 10px -5px rgba(0, 0, 0, .6);
+    /*background: rgba(0,0,0,.2); */
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+9,0.9+52,0+100 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(255,255,255,0.9) 52%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 9%,rgba(255,255,255,0.9) 52%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 52%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+
+
+
+
     padding:20px 10%;
     height:100%;
+    position:relative;
 }
 
 #home-signup-container {
