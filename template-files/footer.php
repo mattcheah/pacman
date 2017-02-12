@@ -8,8 +8,8 @@
         </div>
         <div class="col-md-3 col-sm-6">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Page1</a></li>
+                <li><a href="/pacman/">Home</a></li>
+                <li><a href="/pacman/interior.html">Interior</a></li>
                 <li><a href="">Page2</a></li>
             </ul>
         </div>
