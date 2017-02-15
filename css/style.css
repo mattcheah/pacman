@@ -94,7 +94,17 @@ nav .navbar-toggle .icon-bar {
     background: linear-gradient(to bottom,  #153767 0%,#072d47 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#153767', endColorstr='#072d47',GradientType=0 ); /* IE6-9 */
 
-    padding:20px 10%;
+    padding: 100px 10% 60px;
+    
+    color:#4391d8;
+}
+
+#full-body h2 {
+    font-size: 42px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    color: #52b5ff;
+    text-shadow: 2px 2px 1px #041832;
 }
 
 .outer-container {
@@ -113,16 +123,17 @@ nav .navbar-toggle .icon-bar {
 /* Section 4: Footer Styles */
 
 footer {
+    height:260px;
     background-image: 
 		/*2 grey borders*/
 		linear-gradient(
 			transparent 8%, 
-			rgba(100, 100, 100, 1) 8%, 
-			rgba(100, 100, 100, 1) 14%, 
+			rgba(100, 100, 100, 1) 9%, 
+			rgba(100, 100, 100, 1) 13%, 
 			transparent 14%, 
 			transparent 86%, 
-			rgba(100, 100, 100, 17) 86%, 
-			rgba(100, 100, 100, 1) 92%, 
+			rgba(100, 100, 100, 17) 87%, 
+			rgba(100, 100, 100, 1) 91%, 
 			transparent 92%
 		), 
 		/*thin stripes*/
@@ -139,10 +150,16 @@ footer {
 		cover, /*borders*/
 		4px 4px, /*thin stripes*/
 		cover; /*base white*/
-    padding:20px 10%;
+    padding:30px 10%;
     
     color:white;
 }
+
+#footer-links {
+    padding-top:40px;
+}
+
+
 
 /* Section 5: Homepage Styles */
 
@@ -250,6 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     top: 240px;
     position: relative;
     color:#DD0000;
+    margin-top:0;
 }
 
 .body-container-interior {

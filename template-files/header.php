@@ -42,8 +42,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/pacman/">Home<span class="sr-only">(current)</span></a></li>
-            <li><a href="interior.html">Resources</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
