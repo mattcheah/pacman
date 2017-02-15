@@ -11,7 +11,7 @@
 
 
 <body>
-    <nav class="navbar navbar-fixed-top">
+    <nav class="pac-nav">
       <div class="container container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -28,8 +28,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/pacman/">Home<span class="sr-only">(current)</span></a></li>
-            <li><a href="interior.html">Interior</a></li>
-              <li><a href="#">Interior</a></li>
+            <li><a href="interior.html">Resources</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

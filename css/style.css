@@ -42,16 +42,11 @@ h1,h2,h3,h4,h5,h6 {
 
 
 nav {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#072d47+0,163b5e+50,083554+51,1e4f7f+100 */
-background: #072d47; /* Old browsers */
-background: -moz-linear-gradient(top,  #072d47 0%, #163b5e 50%, #083554 51%, #1e4f7f 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #072d47 0%,#163b5e 50%,#083554 51%,#1e4f7f 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #072d47 0%,#163b5e 50%,#083554 51%,#1e4f7f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#072d47', endColorstr='#1e4f7f',GradientType=0 ); /* IE6-9 */
-
-    color:white;
-    
+    color:black;
     height:90px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
 }
 
 nav div a{
@@ -62,13 +57,6 @@ nav .navbar-header a:hover {
     color:#a0c4e4 ;
 }
 
-nav li {
-    box-shadow: -7px 0px 7px -8px #333;
-}
-
-nav li:last-child {
-    box-shadow: -7px 0px 7px -8px #333, 7px 0px 7px -8px #333;
-}
 nav li a {
     padding: 35px 50px !important;
     font-size: 20px;
@@ -76,7 +64,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color:#71ade2 !important;
+    color:#153767 !important;
     background-color: rgba(0,0,0,0)  !important;
 }
 
@@ -145,9 +133,9 @@ footer {
     
     background-image: url('/pacman/images/nb.jpg');
     background-size: cover;
-    height:100%;
+    height:560px;
     padding:0px;
-    margin:90px 0 0 0;
+    margin:0px 0 0 0;
 }
 
 #home-jumbotron #home-h1 {
@@ -161,7 +149,7 @@ footer {
 }
 
 #jumbotron-overlay {
-    box-shadow:inset 0px -5px 10px -5px rgba(0, 0, 0, .6);
+    box-shadow:inset 0px -5px 10px -5px rgba(0, 0, 0, .6), inset 0px 120px 160px -80px black;
     /*background: rgba(0,0,0,.2); */
     
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+9,0.9+52,0+100 */
@@ -174,7 +162,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
-    padding:20px 10%;
+    padding:140px 10% 20px;
     height:100%;
     position:relative;
 }
@@ -196,14 +184,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #ribbon-container {
     text-align: center;
     padding: 0 10%;
-    height: 122px;
+    height: 130px;
     width: 100%;
     z-index: 10;
-    background-image: url(../images/ribboncrop.png);
+    background-image: url(../images/ribbon-long-dull.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: -122px;
+    margin-bottom: -130px;
     position: relative;
     bottom:50px;
 }
@@ -213,7 +201,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     color:white;
     font-weight:700;
     font-size:40px;
-    top: 18px;
+    top: 24px;
     margin: 0 auto;
 }
 
