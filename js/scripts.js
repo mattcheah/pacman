@@ -6,12 +6,12 @@ $(function() {
         var offset = $(this).scrollTop();
         var parallaxHeader = $("#home-jumbotron");
         var parallaxHeaderOverlay = $("#jumbotron-overlay");
-        parallaxHeader.css("backgroundPosition", "0px "+(offset*.3)+"px");
-        if ($(window).width() > 960) {
+        parallaxHeader.css("backgroundPosition", "0px "+(offset*.3-50)+"px");
+        /*if ($(window).width() > 960) {
             parallaxHeaderOverlay.css({
                 background: "linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) "+(52-(offset*.2))+"%,rgba(255,255,255,0) "+(100-(offset*.15))+"%)"
             });    
-        }
+        }*/
         
         
         

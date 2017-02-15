@@ -41,12 +41,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-nav {
+.pac-nav {
     color:black;
     height:90px;
     position: absolute;
     top: 0;
-    z-index: 100;
+    z-index: 10;
+    padding:0 8%;
 }
 
 nav div a{
@@ -131,8 +132,9 @@ footer {
 
 #home-jumbotron {
     
-    background-image: url('/pacman/images/nb.jpg');
+    background-image: url('/pacman/images/huntingtonpier-sm.jpg');
     background-size: cover;
+    background-position: 0px -50px;
     height:560px;
     padding:0px;
     margin:0px 0 0 0;
@@ -141,22 +143,26 @@ footer {
 #home-jumbotron #home-h1 {
     font-weight:700;
     font-size:54px;
-    color:#800F0F;
+    /*color:#800F0F;*/
+    color:white;
+    text-shadow: 1px 1px 1px black;
 }
 
 #home-jumbotron #home-h2 {
-    color:#153767;
+    /*color:#153767; former */
+    color:#1c4e95;
+    text-shadow: 1px 1px 1px black;
 }
 
 #jumbotron-overlay {
     box-shadow:inset 0px -5px 10px -5px rgba(0, 0, 0, .6), inset 0px 120px 160px -80px black;
     /*background: rgba(0,0,0,.2); */
     
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+9,0.9+52,0+100 */
-background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(255,255,255,0.9) 52%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 9%,rgba(255,255,255,0.9) 52%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 52%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+/*
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(255,255,255,0.9) 52%, rgba(255,255,255,0) 100%); 
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 9%,rgba(255,255,255,0.9) 52%,rgba(255,255,255,0) 100%); 
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 52%,rgba(255,255,255,0) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); */
 
 
 
@@ -259,7 +265,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /* Section 7: Mobile Styles */
 
 @media (max-width: 960px) {
-    #jumbotron-overlay {
+    /*#jumbotron-overlay {
         background: rgba(255,255,255,.8);
-    }
+    }*/
 }
