@@ -47,7 +47,11 @@ h1,h2,h3,h4,h5,h6 {
     position: absolute;
     top: 0;
     z-index: 10;
-    padding:0 8%;
+    width:100%;
+}
+
+.pac-nav .container-fluid {
+    padding: 0 8%;
 }
 
 nav div a{
@@ -67,6 +71,18 @@ nav li a {
 nav li a:hover {
     color:#153767 !important;
     background-color: rgba(0,0,0,0)  !important;
+}
+
+nav .navbar-toggle {
+    margin:11px 10px 21px;
+}
+
+nav .navbar-toggle .icon-bar {
+    background-color:white;
+    width: 34px;
+    height: 4px;
+    margin: 6px;
+    
 }
 
 /* Section 3: Body Styles */
@@ -268,4 +284,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     /*#jumbotron-overlay {
         background: rgba(255,255,255,.8);
     }*/
+}
+
+@media (max-width: 768px) {
+    
+    
+    #bs-example-navbar-collapse-1, .pac-nav .container-fluid { 
+
+        background: #072d47; /* Old browsers */
+        background: -moz-linear-gradient(left,  #264d84 0%, #072d47 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #264d84 0%,#072d47 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #264d84 0%,#072d47 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#153767', endColorstr='#072d47',GradientType=0 ); /* IE6-9 */
+
+    }
+    
+    #bs-example-navbar-collapse-1 {
+         margin-top: 12px;
+    }
+    
+    .pac-nav .container-fluid {
+        padding:0 15px;
+    }
 }
